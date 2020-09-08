@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Груднов](https://up.htmlacademy.ru/htmlcss/29/user/1261489).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
 
 ---
 
