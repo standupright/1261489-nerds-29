@@ -59,21 +59,21 @@ img {
     background-color: var(--basic-gray);
 }
 
-.nav-list {
+.nav li {
     list-style: none;
 }
 
-.nav-link {
+.nav a {
     color: var(--basic-black);
     font-weight: 500;
     text-transform: uppercase;
     line-height: 30px;
 }
 
-.nav-link:hover{
+.nav a:hover{
     color:var(--basic-red);
 }
-.nav-link:active{
+.nav a:active{
     color: var(--basic-black);
     mix-blend-mode: normal;
     opacity: 0.3;
