@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="page-header">
+      <nav class="nav">
         <a href="index.html">
-          <img src="#logo" alt="Логотип студии Нёрдс">
+          <img class="nav-logo" src="#logo" alt="Логотип студии Нёрдс">
         </a>
-        <ul>
+        <ul class="nav-list">
           <li><a href="index.html">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
@@ -19,95 +22,130 @@
         <a href="">Корзина</a>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1>Магазин готовых шаблонов</h1>
+    <main class="page-main">
+      <section class="promo">
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
       </section>
 
-      <section>
-        <h2>Фильтр шаблонов</h2>
+      <section  class="filter">
+        <h2 class="title-hidden">Фильтр шаблонов</h2>
         <!-- Здесь будет фильтр -->
-        <!-- Здесь будерт сортировка -->
 
+      </section>
+      
+      <section class="catalog">
+        <!-- Здесь будерт сортировка -->
+        <h2 class="title-hidden">Каталог шаблонов</h2>
         <!-- Каталог, вместо картинок пока что затычки -->
-        <ul>
-          <li>
+        <ul class="catalog-list"> 
+          <li class="catalog-item">
             <img src="img/product-1" alt="sedona">
-            <div>
-              <a href="">Sedona</a>
+            <div class="catalog-description">
+              <h3 class="subtitle">
+                <a href="">Sedona</a>
+              </h3>              
               <p>Информационный сайт<br>для туристов</p>
-              <a class="button" href="">9 900 &#8381;</a>
+              <a class="button catalog-button" href="">9 900 &#8381;</a>
             </div>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product-2" alt="pink">
-            <div>
-              <a href="">Pink App</a>
+            <div class="catalog-description">
+              <h3 class="subtitle">
+                <a href="">Pink App</a>
+              </h3>
               <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-              <a class="button" href="">9 900 &#8381;</a>
+              <a class="button catalog-button" href="">9 900 &#8381;</a>
             </div>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product-3" alt="borodinsky">
-            <div>
-              <a href="">Barbershop</a>
+            <div class="catalog-description">
+              <h3 class="subtitle">
+                <a href="">Barbershop</a>
+              </h3>
               <p>Сайт салона красоты<br>Для мужчин, да.</p>
-              <a class="button" href="">9 900 &#8381;</a>
+              <a class="button catalog-button" href="">9 900 &#8381;</a>
             </div>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product-4" alt="mishka">
             <img src="img/product-3" alt="borodinsky">
-            <div>
-              <a href="">Nishka</a>
+            <div class="catalog-description">
+              <h3 class="subtitle">
+                <a href="">Mishka</a>
+              </h3>
               <p>Интернет-магазин<br>вязаных игрушек</p>
-              <a class="button" href="">9 900 &#8381;</a>
+              <a class="button catalog-button" href="">9 900 &#8381;</a>
             </div>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product-5" alt="a plus">
-            <div>
-             <a href="">A plus</a>
+            <div class="catalog-description">
+              <h3 class="subtitle">
+                <a href="">A plus</a>
+              </h3>
               <p>Лендинг курсов повышения<br>квалификации</p>
-             <a class="button" href="">9 900 &#8381;</a>
+             <a class="button catalog-button" href="">9 900 &#8381;</a>
              </div>
           </li>
-          <li>
+          <li class="catalog-item">
             <img src="img/product-6" alt="Kvas">
-            <div>
-             <a href="">Кваст</a>
+            <div class="catalog-description">
+              <h3 class="subtitle">
+                <a href="">Кваст</a>
+              </h3>
              <p>Промо-сайт производителя<br>крафтового кваса</p>
-              <a class="button" href="">9 900 &#8381;</a>
+              <a class="button catalog-button" href="">9 900 &#8381;</a>
             </div>
           </li>
         </ul>
         <!-- Переход между страницами -->
-        <ul>
-          <li>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
             <a>1</a>
           </li>
-          <li>
-            <a href="2">2</a>
+          <li class="pagination-item">
+            <a href="">2</a>
           </li>
-          <li>
-            <a href="3">3</a>
+          <li class="pagination-item">
+            <a href="">3</a>
           </li>
-          <li>
-            <a href="#next">Следующая</a>
+          <li class="pagination-item">
+            <a href="">Следующая</a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <h2>Как нас найти</h2>
+
+    <footer class="page-footer">
+      <h2 class="title-hidden">Как нас найти</h2>
+
       <!-- Здесь будет карта -->
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link link-vk" href="#vk">Вконтакте</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link link-facebook" href="#facebook">Facebook</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link link-instagram" href="#instagram">Instagram</a>
+        </li>
+      </ul>
+
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul>
-        <li><a href="#vk">Вконтакте</a></li>
-        <li><a href="#facebook">Facebook</a></li>
-        <li><a href="#instagram">Instagram</a></li>
-      </ul>
+
    </footer>
+
+   <section class="popup">
+    <h2 class="popup-title">Напишите нам</h2>
+    <button class="popup-close" type="button">Закрыть</button>
+    <!-- Форма popup -->    
+    <button class="button popup-button" type="submit">Отправить</button>
+  </section>
+  
   </body>
 </html>

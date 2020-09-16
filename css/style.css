@@ -12,7 +12,7 @@
     --gray-hover: #DFDFDF;
     --gray-active: #D5D5D5;
     --gray-light: #DBDBDB;
-    --product-gray: #666666;;
+    --product-gray: #666666;
 
     --basic-red: #FB565A;
     --red-hover:  #E74246;
@@ -52,6 +52,15 @@ img {
 
 /* Навигация*/
 
+/* Скрытые заголовки */
+.title-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .nav {
     font-size: inherit;
     line-height: 30px;
@@ -79,14 +88,6 @@ img {
     opacity: 0.3;
 }
 
-/* Скрытые заголовки */
-.title-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
 
 /* Слайдер */
 
@@ -253,9 +254,15 @@ img {
 }
 
 /* Клиенты */
-
+.clients-list {
+    list-style: none;
+}
 
 /* footer */
+
+.social-list {
+    list-style: none;
+}
 
 /* Карта */
 
@@ -284,3 +291,81 @@ img {
     background-color: var(--red-active);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
+
+/* Разметка каталога */
+.promo {
+    background-color: var(--basic-gray);
+}
+
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-description {
+    background-color: var(--basic-gray);
+}
+
+.subtitle a {
+    color: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.subtitle a:hover{
+    color:var(--basic-red);
+}
+.subtitle a:active{
+    color: var(--basic-black);
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+
+.catalog-description p {
+    color: var(--product-gray);
+    line-height: 18px;
+}
+
+.catalog-button {
+    width: 200px;
+    height: 50px;
+}
+
+.catalog-button:hover{
+    background-color: var(--red-hover);
+}
+.catalog-button:active{
+    background-color: var(--red-active);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Пагинация */
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item {
+    background-color: var(--basic-gray);
+    border:0px;
+    border-radius:  3px;
+    text-transform: uppercase;
+}
+.pagination-item-current {
+    background-color: var(--basic-white);
+    border: 3px solid var(--gray-light);
+    box-sizing: border-box;
+}
+
+.pagination-item a{
+    color:inherit;
+    line-height: 18px;
+    font-weight: 500;
+}
+
