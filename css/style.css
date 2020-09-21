@@ -13,6 +13,7 @@
     --gray-active: #D5D5D5;
     --gray-light: #DBDBDB;
     --product-gray: #666666;
+    --logo-hover-gray: #A6A6A6;
 
     --basic-red: #FB565A;
     --red-hover:  #E74246;
@@ -45,10 +46,12 @@ a {
     text-decoration: none;
 }
 
+/* Закоментил, пока не добавлена сетка 
+
 img {
     min-width: 100%;
     height: auto;
-}
+} */
 
 /* Навигация*/
 
@@ -88,6 +91,9 @@ img {
     opacity: 0.3;
 }
 
+.nav-logo a {
+    color: var(--logo-hover-gray);
+}
 
 /* Слайдер */
 
@@ -207,6 +213,7 @@ img {
     list-style: none;
 }
 
+
 .description h3 {
     color: var(--basic-black);
     font-weight: 500;
@@ -258,6 +265,13 @@ img {
     list-style: none;
 }
 
+.clients-list a:hover {
+    opacity: 0.2;
+}
+
+.clients-list a:active {
+    opacity: 0.1;
+}
 /* footer */
 
 .social-list {
