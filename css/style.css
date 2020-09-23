@@ -64,14 +64,40 @@ img {
     margin: -1px;
 }
 
+/* Grids */
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+/*** Header ***/
+.page-header {
+    background-color: var(--basic-gray);
+    min-width: 1440px;
+}
+
 .nav {
+    display: grid;
+    grid-template-columns: 260px 1fr 160px;
+
     font-size: inherit;
     line-height: 30px;
     color: var(--basic-black);
     background-color: var(--basic-gray);
 }
 
-.nav li {
+.nav-list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -94,14 +120,19 @@ img {
 .nav-logo a {
     color: var(--logo-hover-gray);
 }
+/************/
+
+/*** Main ***/
 
 /* Слайдер */
 
-.slider{
+.slider {
     background-color: var(--basic-gray); 
     list-style: none;
     padding:0px;
+    margin-top:0px;
 }
+
 .slider b {
     font-size: 55px;
     line-height: 55px;
@@ -135,13 +166,20 @@ img {
     background-color: var(--red-active);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+
 /* убираем рамку при нажатии */
 .slider-button, .button {
     outline: none;
 }
+
 /* Разработки */
 .development-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
 }
 
 .development-list h3 {
@@ -154,6 +192,7 @@ img {
 .development-list p {
     color: var(--extra-black);
 }
+
 /*  Кнопки */
 .button {
     display: flex;
@@ -208,11 +247,14 @@ img {
 }
 
 /* о нас*/
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+}
 
 .description-list {
     list-style: none;
 }
-
 
 .description h3 {
     color: var(--basic-black);
@@ -241,18 +283,22 @@ img {
 }
 
 .feutures b {
+    display: block;
     color: var(--extra-black);
     text-transform: uppercase;
 }
 
 .feutures-list {
     list-style: none;
+    display:flex;
+    margin: 0;
+    padding: 0;
 }
 
 .feutures-mark {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 45px;
-    line-height: 64px;  
+    line-height: 64px;
 }
 
 .feutures-desc {
@@ -261,8 +307,15 @@ img {
 }
 
 /* Клиенты */
+
 .clients-list {
     list-style: none;
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .clients-list a:hover {
@@ -272,16 +325,23 @@ img {
 .clients-list a:active {
     opacity: 0.1;
 }
-/* footer */
+/************/
+
+/*** Footer ***/
 
 .social-list {
     list-style: none;
+    margin:0;
+    padding:0;
 }
-
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+}
 /* Карта */
 
 .page-footer b{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 36px;
 
@@ -291,8 +351,15 @@ img {
     color: var(--special-black);
     line-height: 22px;
 }
+/************/
 
 /* popup */
+.popup-close {
+    display: flex;
+    width:21px;
+    height: 21px;
+}
+
 .popup-button {
     background-color: var(--basic-red);
     width: 219px;
@@ -307,14 +374,19 @@ img {
 }
 
 
-/* Разметка каталога */
+/*** Разметка каталога ***/
 .promo {
     background-color: var(--basic-gray);
+    height:241px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-title {
     font-size: 55px;
     line-height: 55px;
+    margin-top:0;
 }
 
 .catalog-list {
@@ -382,4 +454,4 @@ img {
     line-height: 18px;
     font-weight: 500;
 }
-
+/************/
