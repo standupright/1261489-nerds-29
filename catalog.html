@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="nav">
+      <nav class="nav container">
         <a href="index.html">
           <img src="img/main-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
@@ -24,13 +24,21 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <div class="container">
+          <h1 class="page-title">Магазин готовых шаблонов</h1>
+        </div>
+        
       </section>
+    
+      <div class="catalog-wrapper container">
 
       <section  class="filter">
         <h2 class="title-hidden">Фильтр шаблонов</h2>
         <!-- Здесь будет фильтр -->
+        <form action="">
+          <label for="">Стоимость</label>
 
+        </form>
       </section>
       
       <section class="catalog">
@@ -38,65 +46,77 @@
         <h2 class="title-hidden">Каталог шаблонов</h2>
         <!-- Каталог, вместо картинок пока что затычки -->
         <!-- Размеры изображений в каталоге везде разные, до уточнения размеров выставлены везде одинаковые -->
-        <ul class="catalog-list"> 
+        <ul class="catalog-list">
           <li class="catalog-item">
-            <img src="img/catalog-sedona.png" width="358" height="576" alt="Шаблон SEDONA">
-            <div class="catalog-description">
-              <h3 class="subtitle">
-                <a href="">Sedona</a>
-              </h3>              
-              <p>Информационный сайт<br>для туристов</p>
-              <a class="button catalog-button" href="">9 900 &#8381;</a>
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-sedona.png" width="358" height="576" alt="Шаблон SEDONA">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Sedona</a>
+                </h3>
+                <p>Информационный сайт<br>для туристов</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-pink.jpg" width="358" height="576" alt="Шаблон PINK">
-            <div class="catalog-description">
-              <h3 class="subtitle">
-                <a href="">Pink App</a>
-              </h3>
-              <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
-              <a class="button catalog-button" href="">9 900 &#8381;</a>
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-pink.jpg" width="358" height="576" alt="Шаблон PINK">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Pink App</a>
+                </h3>
+                <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-barbershop.png" width="358" height="576" alt="Шаблон Barbershop">
-            <div class="catalog-description">
-              <h3 class="subtitle">
-                <a href="">Barbershop</a>
-              </h3>
-              <p>Сайт салона красоты<br>Для мужчин, да.</p>
-              <a class="button catalog-button" href="">9 900 &#8381;</a>
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-barbershop.png" width="358" height="576" alt="Шаблон Barbershop">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Barbershop</a>
+                </h3>
+                <p>Сайт салона красоты<br>Для мужчин, да.</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-mishka.png" width="358" height="576" alt="Шаблон MISHKA">
-            <div class="catalog-description">
-              <h3 class="subtitle">
-                <a href="">Mishka</a>
-              </h3>
-              <p>Интернет-магазин<br>вязаных игрушек</p>
-              <a class="button catalog-button" href="">9 900 &#8381;</a>
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-mishka.png" width="358" height="576" alt="Шаблон MISHKA">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Mishka</a>
+                </h3>
+                <p>Интернет-магазин<br>вязаных игрушек</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-aplus.png" width="358" height="576" alt="Шаблон A PLUS">
-            <div class="catalog-description">
-              <h3 class="subtitle">
-                <a href="">A plus</a>
-              </h3>
-              <p>Лендинг курсов повышения<br>квалификации</p>
-             <a class="button catalog-button" href="">9 900 &#8381;</a>
-             </div>
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-aplus.png" width="358" height="576" alt="Шаблон A PLUS">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">A plus</a>
+                </h3>
+                <p>Лендинг курсов повышения<br>квалификации</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
+            </div>
           </li>
           <li class="catalog-item">
-            <img src="img/catalog-kvast.png" width="358" height="576" alt="Шаблон КВАСТ">
-            <div class="catalog-description">
-              <h3 class="subtitle">
-                <a href="">Кваст</a>
-              </h3>
-             <p>Промо-сайт производителя<br>крафтового кваса</p>
-              <a class="button catalog-button" href="">9 900 &#8381;</a>
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-kvast.png" width="358" height="576" alt="Шаблон КВАСТ">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Кваст</a>
+                </h3>
+                <p>Промо-сайт производителя<br>крафтового кваса</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -116,35 +136,49 @@
           </li>
         </ul>
       </section>
+      </div>
     </main>
 
     <footer class="page-footer">
       <h2 class="title-hidden">Как нас найти</h2>
 
       <!-- Здесь будет карта -->
-
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link link-vk" href="#vk">Вконтакте</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link link-facebook" href="#facebook">Facebook</a>
-        </li>
-        <li class="social-item">
-          <a class="social-link link-instagram" href="#instagram">Instagram</a>
-        </li>
-      </ul>
-
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-
+      <div class="footer-wrapper container">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link link-vk" href="#vk">Вконтакте</a>
+          </li>
+          <li class="social-item">
+            <a class="social-link link-facebook" href="#facebook">Facebook</a>
+          </li>
+          <li class="social-item">
+            <a class="social-link link-instagram" href="#instagram">Instagram</a>
+          </li>
+        </ul>
+        <div class="footer-friendly-text">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
    </footer>
 
    <section class="popup">
     <h2 class="popup-title">Напишите нам</h2>
     <button class="popup-close" type="button">Закрыть</button>
-    <!-- Форма popup -->    
-    <button class="button popup-button" type="submit">Отправить</button>
+    <form class="popup-form" method="post">     
+     <div class="popup-half-width">
+       <label for="form-name">Ваше имя:</label>
+       <input id="form-name"  type="text" name="name" placeholder="Имя Фамилия">
+    
+       <label for="form-email">Ваш email:</label>
+       <input  class="form-email" id="form-email"  type="email" name="email" placeholder="email@example.com">
+     </div>
+     <div class="form-message-wrapper">
+       <label for="form-message">Текст письма:</label>
+       <textarea name="message" id="form-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+     </div>
+     <button class="button popup-button" type="submit">Отправить</button>
+    </form>
   </section>
   
   </body>
