@@ -10,16 +10,30 @@
   <body>
     <header class="page-header">
       <nav class="nav container">
-        <a href="index.html">
+
+        <a class="nav-logo" href="index.html">
           <img src="img/main-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
+
         <ul class="nav-list">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="">Клиенты</a>
+          </li>
+          <li>
+            <a href="catalog.html">Магазин</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
         </ul>
-        <a href="">Корзина</a>
+
+        <div class="nav-cart">
+          <a href="">Корзина</a>
+        </div>
+
       </nav>
     </header>
     <main class="page-main">
@@ -49,7 +63,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <img src="img/catalog-sedona.png" width="358" height="576" alt="Шаблон SEDONA">
+              <img src="img/catalog-sedona.png" width="360" height="576" alt="Шаблон SEDONA">
               <div class="catalog-description">
                 <h3 class="subtitle">
                   <a href="">Sedona</a>
@@ -61,7 +75,7 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <img src="img/catalog-pink.jpg" width="358" height="576" alt="Шаблон PINK">
+              <img src="img/catalog-pink.jpg" width="360" height="576" alt="Шаблон PINK">
               <div class="catalog-description">
                 <h3 class="subtitle">
                   <a href="">Pink App</a>
@@ -73,7 +87,7 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <img src="img/catalog-barbershop.png" width="358" height="576" alt="Шаблон Barbershop">
+              <img src="img/catalog-barbershop.png" width="360" height="576" alt="Шаблон Barbershop">
               <div class="catalog-description">
                 <h3 class="subtitle">
                   <a href="">Barbershop</a>
@@ -85,7 +99,7 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <img src="img/catalog-mishka.png" width="358" height="576" alt="Шаблон MISHKA">
+              <img src="img/catalog-mishka.png" width="360" height="576" alt="Шаблон MISHKA">
               <div class="catalog-description">
                 <h3 class="subtitle">
                   <a href="">Mishka</a>
@@ -97,7 +111,7 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <img src="img/catalog-aplus.png" width="358" height="576" alt="Шаблон A PLUS">
+              <img src="img/catalog-aplus.png" width="360" height="576" alt="Шаблон A PLUS">
               <div class="catalog-description">
                 <h3 class="subtitle">
                   <a href="">A plus</a>
@@ -109,7 +123,31 @@
           </li>
           <li class="catalog-item">
             <div class="catalog-item-wrapper">
-              <img src="img/catalog-kvast.png" width="358" height="576" alt="Шаблон КВАСТ">
+              <img src="img/catalog-kvast.png" width="360" height="576" alt="Шаблон КВАСТ">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Кваст</a>
+                </h3>
+                <p>Промо-сайт производителя<br>крафтового кваса</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-kvast.png" width="360" height="576" alt="Шаблон КВАСТ">
+              <div class="catalog-description">
+                <h3 class="subtitle">
+                  <a href="">Кваст</a>
+                </h3>
+                <p>Промо-сайт производителя<br>крафтового кваса</p>
+                <a class="button catalog-button" href="">9 900 &#8381;</a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-wrapper">
+              <img src="img/catalog-kvast.png" width="360" height="576" alt="Шаблон КВАСТ">
               <div class="catalog-description">
                 <h3 class="subtitle">
                   <a href="">Кваст</a>
@@ -163,21 +201,24 @@
    </footer>
 
    <section class="popup">
+
     <h2 class="popup-title">Напишите нам</h2>
     <button class="popup-close" type="button">Закрыть</button>
+    
     <form class="popup-form" method="post">     
      <div class="popup-half-width">
        <label for="form-name">Ваше имя:</label>
        <input id="form-name"  type="text" name="name" placeholder="Имя Фамилия">
-    
+     </div>
+     <div class="popup-half-width">
        <label for="form-email">Ваш email:</label>
        <input  class="form-email" id="form-email"  type="email" name="email" placeholder="email@example.com">
      </div>
      <div class="form-message-wrapper">
        <label for="form-message">Текст письма:</label>
-       <textarea name="message" id="form-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+       <textarea name="message" id="form-message"  placeholder="В свободной форме"></textarea>
+       <button class="button popup-button" type="submit">Отправить</button>
      </div>
-     <button class="button popup-button" type="submit">Отправить</button>
     </form>
   </section>
   

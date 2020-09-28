@@ -4,6 +4,8 @@
     --basic-black: #000000;
     --extra-black: #283136;
     --special-black:  #444444;
+    --product-wrapper-black-opacity: rgba(77,77,77,0.12);
+    --product-wrapper-black-hover:  #4D4D4D;
 
     --basic-white: #FFFFFF;
 
@@ -14,6 +16,7 @@
     --gray-light: #DBDBDB;
     --product-gray: #666666;
     --logo-hover-gray: #A6A6A6;
+    --popup-border: #D7DCDE;
 
     --basic-red: #FB565A;
     --red-hover:  #E74246;
@@ -94,13 +97,23 @@ img {
     color: var(--basic-black);
     background-color: var(--basic-gray);
 }
-
+.nav-logo {
+    padding-top:49px;
+}
+.nav-logo a {
+    color: var(--logo-hover-gray);
+}
 .nav-list {
-    margin: 0;
+    margin-left: 102px;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 740px;
 }
-
+.nav-list li {
+    margin-right:45px;
+}
 .nav a {
     color: var(--basic-black);
     font-weight: 500;
@@ -116,9 +129,14 @@ img {
     mix-blend-mode: normal;
     opacity: 0.3;
 }
+.nav-cart {
+    display: flex;
+    justify-content: flex-end;
+}
 
-.nav-logo a {
-    color: var(--logo-hover-gray);
+.nav-cart,
+.nav-list {
+    margin-top:75px;
 }
 /************/
 
@@ -128,18 +146,24 @@ img {
 
 .slider {
     background-color: var(--basic-gray); 
-    list-style: none;
-    padding:0px;
-    margin-top:0px;
 }
 
-.slider b {
+
+.slider-list {
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    padding-top: 78px;
+}
+
+.slider-list b {
     font-size: 55px;
     line-height: 55px;
 }
 
-.slider p {
+.slider-list p {
     color: var(--extra-black);
+    margin-top: 25px;
 }
 
 
@@ -149,6 +173,8 @@ img {
     justify-content: center;
     align-items: center;
 
+    margin-top: 38px;
+    margin-bottom: 80px;
     line-height: 18px;
     font-weight: 500;
     color: var(--basic-white);
@@ -171,7 +197,10 @@ img {
 .slider-button, .button {
     outline: none;
 }
-
+.development {
+    padding-bottom: 80px;
+    border-bottom: 2px solid var(--basic-gray);
+}
 /* Разработки */
 .development-list {
     list-style: none;
@@ -250,6 +279,9 @@ img {
 .about-us {
     display: grid;
     grid-template-columns: 1fr 360px;
+    padding-top: 40px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid var(--basic-gray);
 }
 
 .description-list {
@@ -261,19 +293,34 @@ img {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
+    margin:0;
+    padding:0;
+    margin-top:33px;
 }
 
 .description p {
     color: var(--extra-black);
+    margin-top: 32px;
+    margin-bottom:40px;
 }
 
 .description b {
     color: var(--extra-black);
     text-transform: uppercase;
+    
 }
 
+.description-list {
+    margin-top: 23px;
+}
 .description-list li {
     color: var(--extra-black);
+    line-height: 24px;
+    padding-bottom:24px;
+}
+
+.description-list li:last-child() {
+    padding-bottom:0px;
 }
 
 .description-list li::before {
@@ -282,7 +329,8 @@ img {
     background-color: var(--basic-red);
 }
 
-.feutures b {
+.feutures-slogan {
+    margin-top: 37px;
     display: block;
     color: var(--extra-black);
     text-transform: uppercase;
@@ -296,21 +344,40 @@ img {
 }
 
 .feutures-mark {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 27px;
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
 }
 
 .feutures-desc {
+    margin-top: 10px;
     color: var(--extra-black);
     line-height: 18px;
+}
+.letter {
+    margin-top: 3px;
+    margin-right:20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 26px;
+    line-height: 40px;
 }
 
 /* Клиенты */
 
+.clients {
+    padding-top: 48px;
+    padding-bottom: 44px;
+    border-bottom: 2px solid var(--basic-gray);
+}
+
 .clients-list {
     list-style: none;
     margin:0;
+    margin-bottom: 20px;
     padding:0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -328,7 +395,10 @@ img {
 /************/
 
 /*** Footer ***/
-
+.page-footer {
+    padding-top: 80px;
+    padding-bottom: 68px;
+}
 .social-list {
     list-style: none;
     margin:0;
@@ -340,27 +410,93 @@ img {
 }
 /* Карта */
 
-.page-footer b{
+.footer-friendly-text b{
     font-weight: 700;
     font-size: 36px;
     line-height: 36px;
 
 }
 
-.page-footer p {
+.footer-friendly-text p {
+    margin-top: 10px;
     color: var(--special-black);
     line-height: 22px;
 }
 /************/
 
 /* popup */
+.popup {
+    height: 590px;
+    width: 960px;
+    outline: 1px solid blue;
+}
+.popup-title {
+    display: inline-block;
+    margin-top: 63px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+}
+
 .popup-close {
-    display: flex;
+    display: inline-block;
+    margin-top:78px;
+    margin-left: 438px;
+    padding:0px;
     width:21px;
     height: 21px;
 }
 
+.popup-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 37px;
+    margin-left: 100px;
+}
+
+.popup-form label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+.popup-half-width {
+    display: flex;
+    flex-direction: column;
+}
+.popup-half-width:first-child {
+    margin-right: 40px;
+}
+
+.popup-half-width input {
+    margin-top:5px;
+    padding: 16px;
+    width: 360px;
+    height: 50px;
+    border: 2px solid var(--popup-border);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.form-message-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 34px;
+}
+.form-message-wrapper textarea {
+    resize: none;
+    width: 760px;
+    height: 118px;
+    margin-top: 5px;
+    padding: 16px;
+    border: 2px solid var(--popup-border);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
 .popup-button {
+    display: block;
+    margin-top: 47px;
     background-color: var(--basic-red);
     width: 219px;
     height: 50px;
@@ -392,6 +528,7 @@ img {
     font-size: 55px;
     line-height: 55px;
     margin-top:0;
+    text-align: center;
 }
 
 .catalog {
@@ -399,7 +536,7 @@ img {
 }
 .catalog-list {
     list-style: none;
-    margin:0px;
+    margin:0;
     padding: 0;
     display: grid;
     grid-template-columns: 360px 360px;
@@ -411,6 +548,21 @@ img {
 .catalog-item-wrapper {
     display: flex;
     align-items: flex-end;
+    padding-top: 40px;
+    background-color: var(--product-wrapper-black-opacity);
+    border-radius: 5px;
+}
+.catalog-item-wrapper:hover {
+    background-color: var(--product-wrapper-black-hover);
+    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+}
+/* Круги */
+.catalog-item-wrapper::before {
+    z-index: 1;
+    width: 14px;
+    height: 14px;
+    background-color: var(--basic-white);
+    border-radius: 50%;
 }
 
 .catalog-description {
