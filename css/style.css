@@ -10,6 +10,7 @@
     --basic-white: #FFFFFF;
 
     --basic-gray: #EEEEEE;
+    --social-icon-gray: #E1E1E1;
     --extra-gray:  #888888;
     --gray-hover: #DFDFDF;
     --gray-active: #D5D5D5;
@@ -29,6 +30,8 @@
     --basic-yellow: #EFC84A;
     --yellow-hover: #EAB534;
     --yeelow-active: #E5A722;
+
+    --shadow: rgba(0, 1, 1, 0.1);
 }
 
 /* Глобальные селекторы */
@@ -49,12 +52,11 @@ a {
     text-decoration: none;
 }
 
-/* Закоментил, пока не добавлена сетка 
 
 img {
     min-width: 100%;
     height: auto;
-} */
+} 
 
 /* Навигация*/
 
@@ -90,7 +92,7 @@ img {
 
 .nav {
     display: grid;
-    grid-template-columns: 260px 1fr 160px;
+    grid-template-columns: 160px 1fr 160px;
 
     font-size: inherit;
     line-height: 30px;
@@ -98,13 +100,14 @@ img {
     background-color: var(--basic-gray);
 }
 .nav-logo {
-    padding-top:49px;
+    margin-top:49px;
 }
 .nav-logo a {
     color: var(--logo-hover-gray);
 }
 .nav-list {
     margin-left: 102px;
+    margin-top: 75px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -124,14 +127,47 @@ img {
 .nav a:hover{
     color:var(--basic-red);
 }
-.nav a:active{
+.nav a:active,
+.nav a:focus{
     color: var(--basic-black);
     mix-blend-mode: normal;
     opacity: 0.3;
 }
+
+/* Линия на конкретной странице */
+.nav-item-line{
+    position: relative;
+}
+
+.nav-item-line::after {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left:0px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--basic-red);
+    background-position: 0 0;
+}
+
+
 .nav-cart {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    margin-top: 75px;
+}
+
+.nav-cart:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    right: 100px;
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .nav-cart,
@@ -148,17 +184,38 @@ img {
     background-color: var(--basic-gray); 
 }
 
+/* Backgrounds всех слайдов */
+.slider-item-first {
+    background-image: url("../img/index-slider-one.png");
+    background-repeat: no-repeat;
+    background-position: 400px 0;
+}
+.slider-item-second {
+    background-image: url("../img/index-slider-second.png");
+    background-repeat: no-repeat;
+    background-position: 400px 0;
+}
+.slider-item-third {
+    background-image: url("../img/index-slider-third.png");
+    background-repeat: no-repeat;
+    background-position: 400px 0;
+}
 
 .slider-list {
     list-style: none;
     padding:0px;
     margin:0px;
+}
+
+.slider-list li {
     padding-top: 78px;
+    padding-bottom: 80px;
 }
 
 .slider-list b {
     font-size: 55px;
     line-height: 55px;
+
 }
 
 .slider-list p {
@@ -174,7 +231,6 @@ img {
     align-items: center;
 
     margin-top: 38px;
-    margin-bottom: 80px;
     line-height: 18px;
     font-weight: 500;
     color: var(--basic-white);
@@ -190,17 +246,18 @@ img {
 }
 .slider-button:active {
     background-color: var(--red-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 /* убираем рамку при нажатии */
-.slider-button, .button {
+.slider-button, .button ,.popup-close {
     outline: none;
 }
 .development {
     padding-bottom: 80px;
     border-bottom: 2px solid var(--basic-gray);
 }
+
 /* Разработки */
 .development-list {
     list-style: none;
@@ -210,14 +267,36 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
 }
-
+.development-list li {
+    padding-top: 251px;
+}
 .development-list h3 {
+    position: relative;
     color: var(--basic-black);
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
 }
+/* Декор изображения */
+.development-list h3::before {
+    content: "";
+    position: absolute;
+    top: -201px;
+    width: 300px;
+    height: 146px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
 
+.development-item:nth-of-type(1) h3::before{
+    background-image: url("../img/development-websites.png");
+}
+.development-item:nth-of-type(2) h3::before {
+    background-image: url("../img/development-apps.png");
+}
+.development-item:nth-of-type(3) h3::before {
+    background-image: url("../img/development-presentations.png");
+}
 .development-list p {
     color: var(--extra-black);
 }
@@ -249,7 +328,7 @@ img {
 }
 .button-red:active {
     background-color: var(--red-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 .button-green {
@@ -260,8 +339,7 @@ img {
 }
 .button-green:active {
     background-color: var(--green-active);
-   
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 .button-yellow {
@@ -272,7 +350,7 @@ img {
 }
 .button-yellow:active {
     background-color: var(--yeelow-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 /* о нас*/
@@ -314,19 +392,26 @@ img {
     margin-top: 23px;
 }
 .description-list li {
+    margin: 0;
+    padding: 0;
+    position: relative;
     color: var(--extra-black);
     line-height: 24px;
     padding-bottom:24px;
 }
 
-.description-list li:last-child() {
-    padding-bottom:0px;
-}
-
 .description-list li::before {
+    content:"";
+    position: absolute;
+    top: 11px;
+    left: -40px;
     width: 25px;
     height: 2px;
     background-color: var(--basic-red);
+}
+
+.description-list li:last-child() {
+    padding-bottom:0px;
 }
 
 .feutures-slogan {
@@ -345,8 +430,8 @@ img {
 
 .feutures-mark {
     display: flex;
+    margin:0px;
     margin-top: 31px;
-    margin-bottom: 27px;
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
@@ -369,8 +454,8 @@ img {
 /* Клиенты */
 
 .clients {
-    padding-top: 48px;
-    padding-bottom: 44px;
+    padding-top: 46px;
+    padding-bottom: 24px;
     border-bottom: 2px solid var(--basic-gray);
 }
 
@@ -396,19 +481,88 @@ img {
 
 /*** Footer ***/
 .page-footer {
-    padding-top: 80px;
+    margin-top: 80px;
     padding-bottom: 68px;
 }
+/* Карта */
+/* затычка вместо карты, чтобы правильно расположить элементы */
+.map {
+    position: relative;
+    left: -140px;
+}
+.map-description {
+    position: absolute;
+    background-color: var(--basic-white);
+    width: 319px;
+    height: 308px;
+    top: 54px;
+    left: 140px;
+}
+
+.map-description b {
+    display: block;
+    padding:0px;
+    margin: 0px;
+    margin-top: 49px;
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+.map-description p {
+    padding:0px;
+    margin: 0px;
+    margin-top: 22px;
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.button-map-description {
+    margin-top: 37px;
+    margin-left: 50px;
+    width: 219px;
+}
+.button-map-description:hover{
+    background-color: var(--red-hover);
+}
+.button-map-description:active{
+    background-color: var(--red-active);
+    box-shadow: inset 0px 3px 0px var(--shadow);
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-top: 68px;
+}
+
+/* Icons */
 .social-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin:0;
     padding:0;
 }
-.footer-wrapper {
-    display: grid;
-    grid-template-columns: 260px 1fr;
+
+.social-item {
+    margin-right: 9px;
+    margin-bottom: 9px;
+    width: 81px;
+    height: 81px;
 }
-/* Карта */
+.social-item:hover path:nth-child(2){
+    fill: var(--red-hover)
+}
+.social-item:active path:nth-child(2){
+    fill: var(--red-active)
+}
+
+.footer-friendly-text {
+    margin-top: 7px;
+}
 
 .footer-friendly-text b{
     font-weight: 700;
@@ -447,6 +601,19 @@ img {
     padding:0px;
     width:21px;
     height: 21px;
+    border: 0px;
+    background-color: var(--basic-white);
+    background-image: url(../img/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+.popup-close:hover {
+    opacity: 1;
+}
+
+.popup-close:active {
+    opacity: 0.1;
 }
 
 .popup-form {
@@ -506,7 +673,7 @@ img {
 }
 .popup-button:active{
     background-color: var(--red-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 
@@ -621,7 +788,7 @@ img {
 }
 .catalog-button:active{
     background-color: var(--red-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 /* Пагинация */
@@ -647,6 +814,14 @@ img {
     border-radius:  3px;
     text-transform: uppercase;
 }
+
+.pagination-item:hover:not(.pagination-item-current) {
+    background-color: var(--gray-hover);
+}
+.pagination-item:active:not(.pagination-item-current) {
+    background-color: var(--gray-active);
+    box-shadow: inset 0px 3px 0px var(--shadow);
+}
 .pagination-item:last-child{
     width: 260px;
 }
@@ -660,5 +835,9 @@ img {
     color:inherit;
     line-height: 18px;
     font-weight: 500;
+}
+
+.catalog-footer {
+    margin-top: 60px;
 }
 /************/
