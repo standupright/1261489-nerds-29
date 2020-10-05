@@ -18,6 +18,7 @@
     --product-gray: #666666;
     --logo-hover-gray: #A6A6A6;
     --popup-border: #D7DCDE;
+    --slider-current: #c1c1c1;
 
     --basic-red: #FB565A;
     --red-hover:  #E74246;
@@ -181,7 +182,7 @@ img {
 /* Слайдер */
 
 .slider {
-    background-color: var(--basic-gray); 
+    background-color: var(--basic-gray);
 }
 
 /* Backgrounds всех слайдов */
@@ -225,7 +226,7 @@ img {
 
 
 .slider-button {
-
+    outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,10 +250,43 @@ img {
     box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
-/* убираем рамку при нажатии */
-.slider-button, .button ,.popup-close {
-    outline: none;
+/* Кнопки слайдера */
+.slider .container {
+    position: relative;
 }
+
+.slider-control {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+    left: 536px;
+    top: 317px;
+    z-index: 20;
+}
+
+.control-button {
+    position: relative;
+    outline: none;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--basic-white);
+}
+.control-button-current::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--slider-current);
+    box-sizing: border-box;
+    z-index: 30;
+}
+
 .development {
     padding-bottom: 80px;
     border-bottom: 2px solid var(--basic-gray);
@@ -306,7 +340,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    outline: none;
     line-height: 18px;
     font-weight: 500;
     color: var(--basic-white);
@@ -596,6 +630,7 @@ img {
 
 .popup-close {
     display: inline-block;
+    outline: none;
     margin-top:78px;
     margin-left: 438px;
     padding:0px;
