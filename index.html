@@ -148,7 +148,7 @@
     <!-- Здесь будет интерактивная карта -->
     <!-- Временнная затычка вместо карты -->
     <div class="map container">
-      <img src="img/map.png" width="1440" height="416" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <img src="img/map.jpg" width="1440" height="416" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <div class="map-description">
         <b>NЁRDS DESIGN STUDIO</b>
         <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
@@ -203,10 +203,10 @@
     <h2 class="popup-title">Напишите нам</h2>
     <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 
-    <form class="popup-form" method="post">
+    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="popup-half-width">
         <label for="form-name">Ваше имя:</label>
-        <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="form-name" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
       </div>
       <div class="popup-half-width">
         <label for="form-email">Ваш email:</label>
@@ -214,11 +214,13 @@
       </div>
       <div class="form-message-wrapper">
         <label for="form-message">Текст письма:</label>
-        <textarea name="message" id="form-message" placeholder="В свободной форме"></textarea>
+        <textarea class="form-message" name="message" id="form-message" placeholder="В свободной форме"></textarea>
         <button class="button popup-button" type="submit">Отправить</button>
       </div>
     </form>
   </section>
+
+  <script src="js/message.js"></script>
 
 </body>
 
