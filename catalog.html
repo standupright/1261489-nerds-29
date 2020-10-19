@@ -301,27 +301,28 @@
     </footer>
 
   
-   <section class="popup">
+    <section class="popup">
 
-    <h2 class="popup-title">Напишите нам</h2>
-    <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-
-    <form class="popup-form" method="post">
-      <div class="popup-half-width">
-        <label for="form-name">Ваше имя:</label>
-        <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
-      </div>
-      <div class="popup-half-width">
-        <label for="form-email">Ваш email:</label>
-        <input class="form-email" id="form-email" type="email" name="email" placeholder="email@example.com">
-      </div>
-      <div class="form-message-wrapper">
-        <label for="form-message">Текст письма:</label>
-        <textarea name="message" id="form-message" placeholder="В свободной форме"></textarea>
-        <button class="button popup-button" type="submit">Отправить</button>
-      </div>
-    </form>
-  </section>
+      <h2 class="popup-title">Напишите нам</h2>
+      <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="popup-half-width">
+          <label for="form-name">Ваше имя:</label>
+          <input class="form-name" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="popup-half-width">
+          <label for="form-email">Ваш email:</label>
+          <input class="form-email" id="form-email" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="form-message-wrapper">
+          <label for="form-message">Текст письма:</label>
+          <textarea class="form-message" name="message" id="form-message" placeholder="В свободной форме"></textarea>
+          <button class="button popup-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+  
+    <script src="js/message.js"></script>
   </body>
 </html>
