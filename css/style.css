@@ -664,6 +664,7 @@ img {
     margin: auto;
     height: 590px;
     width: 960px;
+    z-index: 20;
 }
 .popup-title {
     display: inline-block;
