@@ -211,9 +211,17 @@ img {
     margin:0px;
 }
 
-.slider-list li {
+.slider-list li{
+    /* display: none; */
     padding-top: 78px;
     padding-bottom: 80px;
+}
+
+.slider-item {
+    display: none;
+}
+.slider-current {
+    display:block;
 }
 
 .slider-list b {
