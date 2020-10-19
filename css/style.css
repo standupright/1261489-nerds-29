@@ -227,7 +227,6 @@ img {
 .slider-list b {
     font-size: 55px;
     line-height: 55px;
-
 }
 
 .slider-list p {
@@ -238,18 +237,18 @@ img {
 
 .slider-button {
     outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    min-width: 210px;
+    max-width: 330px;
+    padding: 17px 15px 15px 15px;
     margin-top: 38px;
     line-height: 18px;
     font-weight: 500;
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: var(--basic-red);
-    width: 240px;
-    height: 50px;
     border: 0px;
     border-radius: 3px;
 }
@@ -358,17 +357,19 @@ img {
 
 /*  Кнопки */
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
     outline: none;
+    padding: 17px 15px 15px 15px;
+    min-width: 130px;
+    max-width: 270px;
+
     line-height: 18px;
     font-weight: 500;
     color: var(--basic-white);
     text-transform: uppercase;
     background-color: var(--basic-red);
-    width: 160px;
-    height: 50px;
     border: 0px;
     border-radius: 3px;
 }
@@ -417,7 +418,7 @@ img {
 /* о нас*/
 .about-us {
     display: grid;
-    grid-template-columns: 1fr 360px;
+    grid-template-columns: 800px 360px;
     padding-top: 40px;
     padding-bottom: 75px;
     border-bottom: 2px solid var(--basic-gray);
@@ -485,6 +486,7 @@ img {
 .feutures-list {
     list-style: none;
     display:flex;
+    flex-wrap:wrap;
     margin: 0;
     padding: 0;
 }
@@ -548,6 +550,8 @@ img {
 }
 /* Карта */
 /* затычка вместо карты, чтобы правильно расположить элементы */
+
+
 .map .container {
     position: relative;
 }
@@ -591,6 +595,7 @@ img {
 }
 
 .button-map-description {
+    
     margin-top: 37px;
     margin-left: 50px;
     width: 219px;
@@ -976,19 +981,17 @@ img {
 }
 
 .filter-button {
+   
+    width: 230px;
     outline: none;
     border: 0;
     border-radius: 3px;
     margin-top: 48px;
-    width: 260px;
-    height: 50px;
     background-color: var(--basic-gray);
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    text-align: center;
-    vertical-align: center;
     color: var(--basic-black);
 }
 
@@ -1124,14 +1127,18 @@ img {
     bottom: 0px;
     background-color: var(--basic-gray);
     border: none;
-    width: 358px;
-    height: 231px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     text-align:center;
     display: none;
     flex-direction: column;
     align-items: center;
+    padding-top:26px;
+    padding-bottom: 44px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 258px;
+    max-height: 515px;
 }
 
 .catalog-item:hover .catalog-description,
@@ -1142,7 +1149,6 @@ img {
 .subtitle {
     margin:0px;
     padding: 0px;
-    margin-top: 26px;  
 }
 .subtitle a {
     color: inherit;
@@ -1163,6 +1169,7 @@ img {
 
 
 .catalog-description p {
+    overflow: auto;
     margin:0px;
     margin-top:12px;
     color: var(--product-gray);
@@ -1172,7 +1179,6 @@ img {
 .catalog-button {
     margin-top:32px;
     width: 200px;
-    height: 50px;
 }
 
 .catalog-button:hover,
@@ -1195,13 +1201,11 @@ img {
 
 
 .pagination-item {
-    display: flex;    
-    justify-content: center;
-    align-items: center;
+    display: block;    
+    text-align: center;
     margin-top:54px;
     margin-right: 7px;
-    width: 50px;
-    height: 50px;
+    padding: 17px 20px 15px 20px;
     background-color: var(--basic-gray);
     border:0px;
     border-radius:  3px;
