@@ -664,7 +664,6 @@ img {
     margin: auto;
     height: 590px;
     width: 960px;
-    outline: 1px solid blue;
 }
 .popup-title {
     display: inline-block;
