@@ -975,6 +975,33 @@ img {
 
 }
 
+.filter-button {
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    margin-top: 48px;
+    width: 260px;
+    height: 50px;
+    background-color: var(--basic-gray);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: center;
+    color: var(--basic-black);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--gray-hover);
+}
+
+.filter-button:active {
+    background-color: var(--gray-active);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .catalog {
     margin-left: 140px;
 }
