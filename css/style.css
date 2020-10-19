@@ -540,17 +540,16 @@ img {
 }
 /* Карта */
 /* затычка вместо карты, чтобы правильно расположить элементы */
-.map {
+.map .container {
     position: relative;
-    left: -140px;
 }
 .map-description {
     position: absolute;
     background-color: var(--basic-white);
     width: 319px;
     height: 308px;
-    top: 54px;
-    left: 140px;
+    bottom: 54px;
+    left: 0px;
 }
 
 .map-description b {
