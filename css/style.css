@@ -40,7 +40,7 @@
 /* Глобальные селекторы */
 
 body {
-    min-width: 1440px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -85,6 +85,7 @@ img {
 }
 .container{
     width: 1160px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 /*** Header ***/
@@ -96,7 +97,6 @@ img {
 .nav {
     display: grid;
     grid-template-columns: 160px 1fr 160px;
-
     font-size: inherit;
     line-height: 30px;
     color: var(--basic-black);
@@ -109,8 +109,8 @@ img {
     color: var(--logo-hover-gray);
 }
 .nav-list {
-    margin-left: 102px;
-    margin-top: 75px;
+    margin-left: 202.13px;
+    margin-bottom: 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -146,7 +146,7 @@ img {
 .nav-item-line::after {
     content: "";
     position: absolute;
-    top: 43px;
+    top: 42px;
     left:0px;
     width: 100%;
     height: 2px;
@@ -176,7 +176,7 @@ img {
 
 .nav-cart,
 .nav-list {
-    margin-top:75px;
+    margin-top:85px;
 }
 /************/
 
@@ -232,6 +232,7 @@ img {
 .slider-list p {
     color: var(--extra-black);
     margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 
@@ -271,8 +272,8 @@ img {
     display: flex;
     justify-content: space-between;
     width: 88px;
-    left: 536px;
-    top: 317px;
+    left: 556px;
+    top: 314px;
     z-index: 20;
 }
 
@@ -353,6 +354,7 @@ img {
     color: var(--extra-black);
     padding: 0;
     margin-top: 16px;
+    margin-bottom: 0;
 }
 
 /*  Кнопки */
@@ -419,13 +421,15 @@ img {
 .about-us {
     display: grid;
     grid-template-columns: 800px 360px;
-    padding-top: 40px;
-    padding-bottom: 75px;
+    padding-top: 39px;
+    padding-bottom: 65px;
     border-bottom: 2px solid var(--basic-gray);
 }
 
 .description-list {
     list-style: none;
+    margin: 0;
+    margin-top: 23px;
 }
 
 .description h3 {
@@ -450,9 +454,6 @@ img {
     
 }
 
-.description-list {
-    margin-top: 23px;
-}
 .description-list li {
     margin: 0;
     padding: 0;
@@ -460,6 +461,10 @@ img {
     color: var(--extra-black);
     line-height: 24px;
     padding-bottom:24px;
+}
+
+.description-list li:last-child {
+    padding-bottom: 0;
 }
 
 .description-list li::before {
@@ -477,10 +482,12 @@ img {
 }
 
 .feutures-slogan {
-    margin-top: 37px;
+    margin-top: 30px;
+    text-align: center;
     display: block;
     color: var(--extra-black);
     text-transform: uppercase;
+
 }
 
 .feutures-list {
@@ -507,13 +514,15 @@ img {
 }
 .letter {
     margin-top: 3px;
-    margin-right:20px;
+    margin-right:22px;
     margin-left: 0px;
     margin-bottom: 0px;
     font-size: 26px;
     line-height: 40px;
 }
-
+.letter:nth-child(2){
+    margin-right:20px;
+}
 /* Клиенты */
 
 .clients {
@@ -551,10 +560,20 @@ img {
 /* Карта */
 /* затычка вместо карты, чтобы правильно расположить элементы */
 
+.map-hide {
+    display:none;
+}
 
 .map .container {
     position: relative;
 }
+.map-picture {
+    min-width: 1440px;
+    left: -140px;
+    position: relative;
+}
+
+
 .map-description {
     position: absolute;
     background-color: var(--basic-white);
@@ -598,7 +617,7 @@ img {
     
     margin-top: 37px;
     margin-left: 50px;
-    width: 219px;
+    width: 189px;
 }
 .button-map-description:hover,
 .button-map-description:focus{
@@ -813,6 +832,12 @@ img {
     text-transform: uppercase;
     font-weight: 700;
 }
+.filter-item:nth-of-type(2) h3 {
+    margin-top: 54px;
+}
+.filter-item:nth-of-type(3) h3 {
+    margin-top: 46px;
+}
 
 .range-controls {
     position: relative;
@@ -862,7 +887,7 @@ img {
 }
 
 .price-controls label {
-    margin-top: 8px;
+    margin-top: 0px;
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
@@ -980,13 +1005,13 @@ img {
 
 }
 
-.filter-button {
-   
-    width: 230px;
+.filter-button {   
+
+    width: 260px;
     outline: none;
     border: 0;
     border-radius: 3px;
-    margin-top: 48px;
+    margin-top: 55px;
     background-color: var(--basic-gray);
     text-transform: uppercase;
     font-weight: 500;
@@ -1084,7 +1109,7 @@ img {
     display: grid;
     grid-template-columns: 360px 360px;
 
-    row-gap: 30px;
+    row-gap: 20px;
     column-gap: 40px;
 }
 
@@ -1205,7 +1230,9 @@ img {
     text-align: center;
     margin-top:54px;
     margin-right: 7px;
-    padding: 17px 20px 15px 20px;
+    width: 50px;
+    height: 35px;
+    padding-top:15px;
     background-color: var(--basic-gray);
     border:0px;
     border-radius:  3px;
@@ -1224,6 +1251,8 @@ img {
     width: 260px;
 }
 .pagination-item-current {
+    padding-top:14px;
+    height:50px;
     background-color: var(--basic-white);
     border: 3px solid var(--gray-light);
     box-sizing: border-box;
