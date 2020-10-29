@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,13 +14,13 @@
   <header class="page-header">
     <nav class="nav container">
 
-      <a class="nav-logo" href="index.html">
+      <a class="nav-logo">
         <img src="img/main-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
       </a>
 
       <ul class="nav-list">
         <li>
-          <a class="nav-item-line" href="index.html">Студия</a>
+          <a>Студия</a>
         </li>
         <li>
           <a href="">Клиенты</a>
@@ -50,18 +50,18 @@
         <!-- Слайдер -->
         <ul class="slider-list">
           <li class="slider-item slider-item-first slider-current">
-            <b>Долго, дорого,<br>скрупулезно.</b>
-            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+            <b>Долго,&nbsp;дорого, скрупулезно.</b>
+            <p>Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
             <a class="slider-button" href="">Узнать больше</a>
           </li>
           <li class="slider-item slider-item-second">
-            <b>Любим математику<br>как никто другой</b>
-            <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
+            <b>Любим&nbsp;математику как никто другой</b>
+            <p>Никакого креатива, только математические формулы для&nbsp;расчета идеальных пропорций</p>
             <a class="slider-button" href="">Узнать больше</a>
           </li>
           <li class="slider-item slider-item-third">
-            <b>Только ночь,<br>только хардкор</b>
-            <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+            <b>Только&nbsp;ночь, только хардкор</b>
+            <p>Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
             <a class="slider-button" href="">Узнать больше</a>
           </li>
         </ul>
@@ -94,19 +94,20 @@
       </ul>
     </section>
 
-    <section class="about-us container">
-      <h2 class="visually-hidden">О нас</h2>
-      <div class="description">
-        <h3>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h3>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не
-          покладая рук, как роботы.</p>
-        <b>Выполняем заказы на разработку:</b>
-        <ul class="description-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
+    <section class="container">
+      <div class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
+        <div class="description">
+          <h3>Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h3>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не
+            покладая рук, как роботы.</p>
+          <b>Выполняем заказы на разработку:</b>
+          <ul class="description-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
 
       <div class="feutures">
         <img class="feutures-logo" src="img/logo-illustration.jpg" alt="Логотип Нёрдс" width="360" height="208">
@@ -126,20 +127,23 @@
           </li>
         </ul>
       </div>
+      </div>
     </section>
 
-    <section class="clients container">
+    <section class="container">
+      <div class="clients">
       <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="clients-list">
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/clients-html-academy.svg" width="199" height="68"
+          <li class="clients-html-academy"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/clients-html-academy.svg" width="199" height="68"
                 alt="Интерактивные онлайн-курсы HTML Academy"></a></li>
-          <li><a href="#"><img src="img/clients-borodinski.png" width="209" height="90" alt="Барбершоп Borodinski"></a>
+          <li class="clients-borodinski"><a href="#"><img src="img/clients-borodinski.png" width="209" height="90" alt="Барбершоп Borodinski"></a>
           </li>
-          <li><a href="#"><img src="img/clients-pink.png" width="185" height="52"
+          <li class="clients-pink"><a href="#"><img src="img/clients-pink.png" width="185" height="52"
                 alt="Продуктовый лендинг приложений PINK"></a></li>
           <li><a href="#"><img src="img/clients-mishka.png" width="173" height="84"
                 alt="Интернет-магазин вязанных игрушек MISHKA"></a></li>
         </ul>
+      </div>
     </section>
   </main>
 
