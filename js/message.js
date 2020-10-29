@@ -1,14 +1,14 @@
-const messageLink = document.querySelector(".button-map-description");
-const popup = document.querySelector(".popup");
-const popupClose = document.querySelector(".popup-close");
-const popupForm = document.querySelector(".popup-form");
-const popupName = document.querySelector(".form-name");
-const popupEmail = document.querySelector(".form-email");
-const popupMessage = document.querySelector(".form-message");
+var messageLink = document.querySelector(".button-map-description");
+var popup = document.querySelector(".popup");
+var popupClose = document.querySelector(".popup-close");
+var popupForm = document.querySelector(".popup-form");
+var popupName = document.querySelector(".form-name");
+var popupEmail = document.querySelector(".form-email");
+var popupMessage = document.querySelector(".form-message");
 
-let isStorageSupport = true;
-const storageName = "";
-const storageEmail = "";
+var isStorageSupport = true;
+var storageName = "";
+var storageEmail = "";
 
 try {
     storageName = localStorage.getItem("name");

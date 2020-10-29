@@ -477,7 +477,7 @@ img {
     background-color: var(--basic-red);
 }
 
-.description-list li:last-child() {
+.description-list li:last-child {
     padding-bottom:0px;
 }
 
@@ -601,7 +601,10 @@ img {
     left: -140px;
     position: relative;
 }
-
+.map iframe {
+    width: 100%;
+    border:0;
+}
 
 .map-description {
     position: absolute;
@@ -825,7 +828,7 @@ img {
 }
 .promo {
     background-color: var(--basic-gray);
-    height:241px;
+    height:232px;
     display:flex;
     justify-content: center;
     align-items: center;
