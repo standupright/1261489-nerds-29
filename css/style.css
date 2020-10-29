@@ -351,6 +351,8 @@ img {
     height: 146px;
 }
 .development-list p {
+    display: block;
+    width: 300px;
     color: var(--extra-black);
     padding: 0;
     margin-top: 16px;
@@ -424,6 +426,10 @@ img {
     padding-top: 39px;
     padding-bottom: 65px;
     border-bottom: 2px solid var(--basic-gray);
+}
+
+.description {
+    width: 660px;
 }
 
 .description-list {
@@ -508,6 +514,8 @@ img {
 }
 
 .feutures-desc {
+    display: block;
+    width: 100px;
     margin-top: 10px;
     color: var(--extra-black);
     line-height: 18px;
@@ -619,7 +627,7 @@ img {
     display: block;
     padding:0px;
     margin: 0px;
-    margin-top: 49px;
+    margin-top: 46px;
     margin-left: 50px;
     font-size: 18px;
     line-height: 30px;
@@ -628,6 +636,8 @@ img {
 
 .map-description address,
 .map-number {
+    display: block;
+    width: 230px;
     padding:0px;
     margin: 0px;
     margin-top: 22px;
@@ -645,9 +655,8 @@ img {
 
 }
 
-.button-map-description {
-    
-    margin-top: 37px;
+.button-map-description {    
+    margin-top: 39px;
     margin-left: 50px;
     width: 189px;
 }
