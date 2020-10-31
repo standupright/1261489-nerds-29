@@ -35,6 +35,9 @@
     --yeelow-active: #E5A722;
 
     --shadow: rgba(0, 1, 1, 0.1);
+    --toggle-shadow: rgba(0, 0, 0, 0.15);
+    --border-special: rgba(0, 0, 0, 0.1);
+    --catalog-item-shadow: rgba(0, 1, 1, 0.25);
 }
 
 /* Глобальные селекторы */
@@ -487,7 +490,7 @@ img {
     padding-bottom:0px;
 }
 
-.feutures-slogan {
+.features-slogan {
     margin-top: 30px;
     text-align: center;
     display: block;
@@ -496,7 +499,7 @@ img {
 
 }
 
-.feutures-list {
+.features-list {
     list-style: none;
     display:flex;
     flex-wrap:wrap;
@@ -504,7 +507,7 @@ img {
     padding: 0;
 }
 
-.feutures-mark {
+.features-mark {
     display: flex;
     margin:0px;
     margin-top: 31px;
@@ -513,7 +516,7 @@ img {
     line-height: 64px;
 }
 
-.feutures-desc {
+.features-desc {
     display: block;
     width: 100px;
     margin-top: 10px;
@@ -912,7 +915,7 @@ img {
     background-color: var(--form-toggle-gray);
     border: 8px solid var(--basic-white);
     border-radius: 50%;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 1px var(--toggle-shadow);
 }   
 .toggle-min {
     left: 18px;
@@ -1068,7 +1071,7 @@ img {
 
 .filter-button:active {
     background-color: var(--gray-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--shadow);
 }
 
 .catalog {
@@ -1160,7 +1163,7 @@ img {
     margin-top: 40px;
     position: relative;
     background-color: var(--product-background-gray);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-special);
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -1184,7 +1187,7 @@ img {
 .catalog-item:focus,
 .catalog-item:hover::before {
     opacity: 1;
-    box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+    box-shadow: 0px 6px 15px var(--catalog-item-shadow);
 }
 
 
